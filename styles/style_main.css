@@ -1,0 +1,137 @@
+@media (min-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+    body {
+        display: flex;
+    }
+    header,
+    nav,
+    main,
+    footer {
+        flex: 0 0 auto;
+    }
+    main {
+        flex: 3;
+    }
+}
+
+@media (max-width: 960px) {
+    body {
+        display: flex;
+    }
+    header,
+    nav,
+    main,
+    footer {
+        flex: 0 0 100%;
+    }
+    main {
+        order: 3;
+    }
+}
+
+@font-face {
+    font-family: 'zanes';
+    src: url("../fonts/SnowySeason.otf") format('opentype');
+}
+
+/* основное */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../pic/back.jpg");
+}
+
+
+/* заголовок */
+.header {
+    color: #001322;
+    font-family: 'zanes', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+    line-height: 1;
+}
+
+
+/* навигация */
+.navigation {
+    background-color: #A25772;
+    color: #EEF5FF;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+/* навигация ссылка */
+.navigation a {
+    color: #F5F5F5;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* навигация ссылка акт */
+.navigation a:hover {
+    background-color: #800b16;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+/* хлеб */
+.str {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background-color: rgba(238, 245, 255, 0.4);
+    color: #001322;
+}
+
+/* хлеб пункт */
+.str li {
+    display: inline;
+}
+
+/* хлеб родитель */
+.str li::after {
+    content: ">";
+    margin: 0 5px;
+}
+
+/* хлеб сейчас */
+.str li:last-child::after {
+    content: none;
+}
+
+/* хлеб акт ссылка */
+.str a {
+    color: #001322;
+    text-decoration: underline;
+}
+
+/* хлеб навод */
+.str a:hover {
+    color: #800b16;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* контент */
+.main {
+    background-color: rgba(238, 245, 255, 0.6);
+    margin: 0px 30px;
+}
+.main p{
+    padding: 5px;
+}
+/* подвал 
+.footer {
+}*/
