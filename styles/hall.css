@@ -20,7 +20,7 @@ body {
     width: 200px;
     height: 200px;
     object-fit: contain;
-    background-color: var(--bred-color);
+    background-color: var(--bread-color);
     border: 1px solid black;
     padding: 4px;
 }
@@ -34,8 +34,8 @@ body {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--body-font-color);
+    background-color: var(--bread-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -49,17 +49,17 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--bread-color);
 }
 
 .modal-content {
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--bread-color);
     width: 80%;
     max-width: 500px;
     position: relative;
-    background-color: #fff;
+    background-color: var(--bg-main-color);
 }
 
 .modal-content img {
@@ -68,11 +68,10 @@ body {
 
 .modal-content p {
     display: block;
-    position: absolute;
     bottom: 15px;
     left: 15px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--body-font-color);
+    background-color: var(--bg-main-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -81,7 +80,7 @@ body {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: #aaa;
+    color: var(--head-color);
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
@@ -89,7 +88,26 @@ body {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: var(--head-color);
     text-decoration: none;
     cursor: pointer;
+}
+
+/*переменые тем*/
+[data-theme="light"] {
+    --bg-main-color: rgba(238, 245, 255, 0.6);
+    --bread-color: rgba(238, 245, 255, 0.4);
+    --body-font-color: #03133a;
+    --backgr-pic: url("../pic/back-light.jpg");
+    --head-color: #001322;
+    --a-color: #800b16;
+}
+
+[data-theme="dark"] {
+    --bg-main-color: rgba(77, 79, 97, 0.6);
+    --bread-color: rgba(77, 79, 97, 0.4);
+    --body-font-color: #EBF6FF;
+    --backgr-pic: url("../pic/back.jpg");
+    --head-color: #E5EDF1;
+    --a-color: #a91120;
 }
