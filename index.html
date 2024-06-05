@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section>
+    <section class="light">
         <header class="header">
             <h1>HOCKEY IS GREAT</h1>
         </header>
@@ -17,7 +17,12 @@
             <a href="nav/equipment.html">Экипировка</a>
             <a href="nav/hall.html">Зал славы</a>
             <a href="nav/rules.html">Жесты судей</a>
+            <select id="theme-select">
+                <option value="light">Светлая тема</option>
+                <option value="dark">Темная тема</option>
+            </select>
         </nav>
+        <script src="scripts/theme.js"></script>
 
         <main class="main">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ac enim quis vehicula. Sed quis
@@ -32,7 +37,8 @@
                 euismod
                 non eu odio. Maecenas consequat, eros nec pellentesque molestie, dui quam viverra felis, a rutrum metus
                 augue non quam. Donec sed sem nec elit sollicitudin lobortis. Duis tincidunt at orci at placerat.
-                </p><p>
+            </p>
+            <p>
                 Mauris metus nisi, imperdiet eget venenatis in, tincidunt eu justo. Vivamus interdum sapien sit amet
                 nisl
                 tincidunt, euismod maximus elit suscipit. Etiam in mollis metus. Morbi nisi massa, vehicula sed ultrices
@@ -43,7 +49,8 @@
                 et
                 justo sapien. Suspendisse eget massa mauris. Cras fringilla augue sapien, ut interdum urna consequat
                 eget.
-                </p><p>
+            </p>
+            <p>
                 Vivamus dictum laoreet sollicitudin. Nunc porta commodo enim ut mollis. Aliquam faucibus gravida
                 lacinia.
                 Nullam blandit erat posuere eros ultrices, quis volutpat purus ultricies. Praesent a eleifend lorem.
@@ -51,7 +58,8 @@
                 arcu dui, ornare sit amet justo ullamcorper, tincidunt mollis dolor. Duis non lobortis justo. In mollis
                 elit
                 auctor lacus tempus varius. Fusce at nulla ornare, pharetra sapien sed, feugiat erat.
-                </p><p>
+            </p>
+            <p>
                 Curabitur fringilla viverra molestie. Mauris lobortis enim quis lorem volutpat, in faucibus quam
                 ultrices.
                 Vivamus hendrerit posuere sapien in mollis. Maecenas ornare fermentum varius. In finibus congue ligula
@@ -64,14 +72,16 @@
                 viverra lorem, a tincidunt ex laoreet vitae. Donec et sapien sit amet nisi scelerisque tincidunt. Aenean
                 non
                 ante facilisis, dapibus lorem eu, posuere orci. Integer id scelerisque nisl.
-            </p><p>
+            </p>
+            <p>
                 Sed convallis semper odio ut vulputate. Donec aliquet vulputate arcu, sed sollicitudin nisi viverra ut.
                 Donec aliquet ultricies neque, quis condimentum lorem mattis non. Sed venenatis ex ac sagittis mattis.
                 Duis
                 sed tellus sed nisi bibendum ultricies at sed metus. Donec egestas ut enim quis placerat. Nunc aliquam
                 leo
                 nisi, in dictum eros eleifend at.
-                </p><p>
+            </p>
+            <p>
                 Proin a dictum lorem, vitae imperdiet odio. Duis congue, sapien eu dictum convallis, nisl nisi lacinia
                 dui,
                 vitae iaculis leo mauris et ante. Mauris lobortis auctor orci, et bibendum neque dapibus ac. Duis
@@ -87,7 +97,8 @@
                 eget
                 cursus lobortis, massa odio tristique mauris, eget ornare ex urna tristique sapien. Nulla ornare commodo
                 commodo.
-                </p><p>
+            </p>
+            <p>
                 Nam maximus faucibus tortor, ut dictum leo iaculis eget. Integer imperdiet condimentum vulputate.
                 Vivamus
                 eleifend condimentum quam, et sagittis velit consectetur eu. Mauris molestie augue in ullamcorper
@@ -103,7 +114,8 @@
                 nulla nec laoreet. Integer dapibus lorem ligula. Aenean consequat sodales quam, a facilisis erat congue
                 in.
                 Phasellus non ultrices orci. Vestibulum et mauris a sem hendrerit lacinia at ac neque.
-                </p><p>
+            </p>
+            <p>
                 Donec cursus pretium est, non blandit odio malesuada ut. Nam pharetra maximus quam, nec fermentum urna
                 lobortis et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec molestie pharetra diam
                 sed
@@ -116,8 +128,8 @@
                 Integer in congue magna. Pellentesque ut metus tortor. Suspendisse egestas leo nibh, sit amet tempor
                 elit
                 aliquet a. Cras pulvinar sodales urna vel pulvinar.
-                </p>
-                <p>
+            </p>
+            <p>
                 Nunc lobortis orci et pretium ultrices. Mauris aliquet venenatis odio in vulputate. Mauris elementum
                 volutpat mi id dictum. Aliquam odio urna, efficitur ut turpis ac, convallis pretium magna. Class aptent
                 taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti
@@ -126,11 +138,21 @@
                 non,
                 vulputate malesuada orci.
             </p>
+
+            <button id="load-cat-button">Загрузить кота</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img id="cat-image" class="cat-image" src="https://cataas.com/cat" alt="Кот" />
+                </div>
+            </div>
+
         </main>
 
         <footer class="footer">
         </footer>
     </section>
+    <script src="scripts/cats.js"></script>
 </body>
 
 </html>

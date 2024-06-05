@@ -1,0 +1,39 @@
+@media (max-width: 960px) {
+    img {
+        min-width: 50px;
+        min-height: 50px;
+        object-fit: contain;
+    }
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    background-color: var(--bred-color);
+    border: 1px solid black;
+    padding: 4px;
+}
+
+div {
+    font-size: larger;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
